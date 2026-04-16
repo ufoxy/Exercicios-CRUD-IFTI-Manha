@@ -14,6 +14,7 @@ namespace LeiaMais.Models
         public ISBN ISBN { get; set; }
         public Editora Editora { get; set; }
         public DateTime AnoPublicacao { get; set; }
+        public StatusLivro Status { get; set; } = StatusLivro.Disponivel;
 
         public Livro(string titulo, GeneroLivro genero, List<Autor> autores, ISBN isbn, Editora editora, DateTime anoPublicacao)
         {
